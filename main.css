@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: grid;
+  place-content: center;
+  margin: 1rem;
+  background-color: hsl(233, 47%, 7%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+}
+.card {
+  width: 327px;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 0.5rem;
+}
+img {
+  max-width: 100%;
+  overflow: hidden;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+h1 {
+  padding: 2rem 2rem 1rem 2rem;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+h1 span {
+  color: hsl(277, 64%, 61%);
+}
+.description {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 0 2rem;
+  line-height: 1.7;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.statistics {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.companies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.templates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.queries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.numbers {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
