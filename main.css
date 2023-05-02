@@ -19,28 +19,22 @@ main {
   align-items: center;
 }
 .card {
-  max-width: 327px;
+  max-width: 20.5rem;
   background-color: hsl(244, 38%, 16%);
   border-radius: 0.5rem;
+  overflow: hidden;
 }
-picture {
-  position: relative;
+.image-container {
+  background-color: hsl(277, 64%, 61%);
 }
 img {
-  position: relative;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   overflow: hidden;
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
-  background-color: hsla(0, 0%, 100%, 0.6);
-}
-.overlay {
-  position: absolute;
-  background-color: hsl(277, 64%, 61%);
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 0;
+  mix-blend-mode:luminosity;
   opacity: 0.5;
 }
 h1 {
@@ -83,12 +77,12 @@ h1 span {
   text-transform: uppercase;
   font-size: 0.75rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 62rem) {
   .card {
     display: flex;
     flex-direction:row-reverse;
-    max-height: 446px;
-    max-width: 1110px;
+    max-height: 27.87rem;
+    max-width: 69.37rem;
 }
   .title {
     text-align: center;
@@ -101,7 +95,7 @@ h1 span {
     margin: 2rem;
   }
   .content {
-    max-width: 550px;
+    max-width: 34.37rem;
   }
   .statistics {
     display: flex;
