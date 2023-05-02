@@ -1,25 +1,47 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
-  display: grid;
-  place-content: center;
-  margin: 1rem;
   background-color: hsl(233, 47%, 7%);
   color: hsl(0, 0%, 100%);
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif; */
+}
+main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  /* Always on the main axis */
+  justify-content: center;
+  /* Always on the cross axis */
+  align-items: center;
 }
 .card {
-  width: 327px;
+  max-width: 327px;
   background-color: hsl(244, 38%, 16%);
   border-radius: 0.5rem;
 }
+picture {
+  position: relative;
+}
 img {
+  position: relative;
   max-width: 100%;
   overflow: hidden;
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
+  background-color: hsla(0, 0%, 100%, 0.6);
+}
+.overlay {
+  position: absolute;
+  background-color: hsl(277, 64%, 61%);
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0.5;
 }
 h1 {
   padding: 2rem 2rem 1rem 2rem;
@@ -40,28 +62,53 @@ h1 span {
   color: hsla(0, 0%, 100%, 0.75);
 }
 .statistics {
-  padding: 2rem;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.companies {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.templates {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.queries {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.statistics div {
+  padding: 1rem;
+  text-align: center;
 }
 .numbers {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.scale {
+  font-family: 'Lexend Deca', sans-serif;
+  color:  hsla(0, 0%, 100%, 0.6);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 992px) {
+  .card {
+    display: flex;
+    flex-direction:row-reverse;
+    max-height: 446px;
+    max-width: 1110px;
+}
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem;
+  }
+  .description {
+    font-size: 1rem;
+    text-align: center;
+    margin: 2rem;
+  }
+  .content {
+    max-width: 550px;
+  }
+  .statistics {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin: 2rem;
+    gap: 1.5rem;
+  }
 }
