@@ -13,6 +13,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Acknowledgements](#acknowledgements)
 
 ## Overview
 
@@ -26,7 +27,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 - Solution URL: https://www.frontendmentor.io/solutions/newbie-challenge-completed-using-css-flexbox-R5T9MwN-87
 
-- Live Site URL: https://fem-nft-component-card.netlify.app/
+- Live Site URL:https://fem-stats-preview-site.netlify.app/
 
 ## My process
 
@@ -40,42 +41,39 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### What I learned
 
--In this project, pure CSS and flexbox were used. Flexbox is a one-dimensional layout system to make web design responsive, and it provides that the elements can change their behavior depending on the kind of device displaying them. Additionally, it makes elements flexible and provides them with appropriate position, and symmetry. Thus, responsive web pages are able to be designed and built without having to use a lot of float and position properties in the CSS.
+Two challenges stuck out for me during this project. The first was learning to
 
 # Interesting code
 
-- Below is code to spread images and text horizontally
+- I learned numerous aspects to html and css as I built this project. One aspect was how to add a transparent overlay to an image. This was done using the mix-blend-mode and opacity tools in css. The html and css code is shown below. The idea is to add the colour to "below" the image in the image-container which wraps the image.
 
 ```html
-<div class="flex-group">
-  <div class="product__price">
-    <img src="./images/icon-ethereum.svg" alt="etherium icon" />
-    <p>0.041 ETH</p>
-  </div>
-  <div class="product__time">
-    <img src="./images/icon-clock.svg" alt="clock" />
-    <p>3 days left</p>
-  </div>
+<div class="image-container">
+  <img src="./images/image-header-mobile.jpg" alt="office workers at desks" />
 </div>
 ```
 
--Below is CSS to flex align all contents from top to bottom.
+-Below is CSS that adds effect to image.
 
 ```css
-.card {
-  background-color: var(--primary-4);
-  border-radius: 0.5rem;
-  width: 327px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.image-container {
+  background-color: hsl(277, 64%, 61%);
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  mix-blend-mode: luminosity;
+  opacity: 0.5;
 }
 ```
 
 ### Continued development
 
-I need to learn how to add an SVG image/icon to the centre of another image.
+As I completed this project I learned that individual elements such as headings and paragraphs should not have padding, but vertical margins only. It is better to use the gap property if using Flex-box for this.
 
 ### Useful resources
 
@@ -84,3 +82,7 @@ I need to learn how to add an SVG image/icon to the centre of another image.
 ## Author
 
 - Frontend Mentor - [@John-Davidson-8](https://www.frontendmentor.io/profile/John-Davidson-8)
+
+## Acknowledgemnets
+
+- Big shout out to Grace in the Frontend Mentor Slack community for all her invaluable help.
