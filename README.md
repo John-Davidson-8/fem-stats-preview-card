@@ -25,7 +25,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- Solution URL: https://www.frontendmentor.io/solutions/newbie-challenge-completed-using-css-flexbox-R5T9MwN-87
+- Solution URL: https://www.frontendmentor.io/solutions/responsive-card-built-with-css-flexbox-gW3JDAy72Q
 
 - Live Site URL:https://fem-stats-preview-site.netlify.app/
 
